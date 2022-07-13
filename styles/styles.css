@@ -5,20 +5,85 @@
   padding: 0;
 }
 
-body .paralax {
+body header {
+  position: relative;
+  /*Barra de Navegacion*/
+}
+body header .paralax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
-body .paralax img {
+body header .paralax img {
   position: absolute;
-  height: 100%;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
+  object-fit: cover;
+}
+body header .navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.436);
+  margin-top: 5px;
+}
+body header .navbar .navbar-nav {
+  --bs-nav-link-hover-color: #ffffff;
+}
+body header .navbar .navbar-nav .nav-link {
+  color: #ffffff;
+}
+body header .navbar .sub a:before {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: all 300ms ease-out;
+}
+body header .navbar .sub a:hover:before {
+  width: 100%;
+}
+body header .navbar .navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
 }
 body main section {
   padding: 40px;
+}
+body main section h1 {
+  text-align: center;
+}
+body main section p {
+  text-align: justify;
+}
+
+/*Modal Login - Politica y Uso*/
+.modal {
+  --bs-modal-header-border-color:none;
+  --bs-modal-footer-border-color:none;
+}
+.modal .modal-content {
+  background: rgba(221, 221, 221, 0.7568627451);
+  color: #000000;
+}
+.modal .modal-content .formLogin {
+  background: rgba(255, 255, 255, 0.8980392157);
+}
+.modal .modal-backdrop {
+  --bs-backdrop-zindex:1;
+}
+
+.modal-backdrop {
+  --bs-backdrop-zindex: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

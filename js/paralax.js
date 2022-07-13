@@ -9,7 +9,7 @@ window.addEventListener('scroll', function(){
     
     izquierda.style.left =  value * -0.8 + 'px';
     derecha.style.marginLeft = value* 0.8  + 'px';
-    cartel.style.marginBottom = value* -1  + 'px';
+    cartel.style.marginTop = value* -1  + 'px';
     hombre.style.left =  value * -0.5 + 'px';
     mujer.style.marginLeft = value* 0.5  + 'px';
     }
